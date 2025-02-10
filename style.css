@@ -85,6 +85,14 @@ body {
   flex-direction: column-reverse;
 }
 
+.profile{
+  mask-image: url(./public/images/red-splatter-8.png);
+  mask-size: contain;
+  background-color: #007FFF;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
 .hero-content {
   margin-bottom: 2rem;
   text-align: center;
@@ -207,7 +215,7 @@ body {
 
 /* About Section */
 .about {
-  padding: 4rem 2rem;
+  padding: 0 2rem;
   max-width: 1400px;
   margin: 0 auto;
   text-align: center;
@@ -600,7 +608,7 @@ html {
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
       align-items: center;
-      padding: 9.125rem 2rem 4rem 2rem;
+      padding: 6.125rem 2rem 1rem 2rem;
   }
 
   .hero-content {
