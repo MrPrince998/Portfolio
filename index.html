@@ -1,241 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/style.css">
-    <script src="src/main.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <p>Port<span>folio</span></p>
-      <nav class="nav-toggle">
-        <img src="./public/images/menu.svg" class="activeMenu navMenu" id="menu" alt="menu">
-        <img src="./public/images/cross.svg" class="menu navMenu" id="cross" alt="menu">
-        <ul class="socialMedia">
-          <li><a href="#home" class="active" id="home" >Home</a></li>
-          <li><a href="#about" id="about" >About</a></li>
-          <li><a href="#skill" id="skill" >Skill</a></li>
-          <li><a href="#project" id="project" >Project</a></li>
-          <li><a href="#contact" id="contact" >Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section id="home" class="home">
-      <div class="left-section">
-        <p>
-          Hello, I'm<br />
-          <span id="name" class="name">Bharat Rana</span><br />
-        </p>
-        <p>And I'm a Web <span id="role" class="role">Designer</span></p>
-        <p class="intro">
-          Welcome to my web developer portfolio! I’m Bharat Rana, a skilled web
-          designer and web developer with a passion for creating beautiful,
-          responsive, and user-friendly websites. I’ve worked on a variety of
-          web projects.
-        </p>
-        <div class="socialMedia">
-          <a href="#"><img src="./public/images/linkin.png" alt="linkin" /></a>
-          <a href="#"
-            ><img src="./public/images/facebook.png" alt="facebook"
-          /></a>
-          <a href="#"><img src="./public/images/tiktok.png" alt="tiktok" /></a>
-          <a href="#"
-            ><img src="./public/images/instagram.png" alt="instagram"
-          /></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./public/images/profile.png" type="image/x-icon">
+    <title>Bharat Rana - Web Designer Portfolio</title>
+    <script src="./src/main.js" defer></script>
+</head>
+<body>
+    <div class="navigation">
+        <div class="logo">Port<span>folio</span></div>
+        <button class="menu-btn" aria-controls="primary-navigation" aria-expanded="false">
+          <img src="./public/images/menu.svg" alt="menu" id="menu">
+          <img src="./public/images/cross.svg" style="display: none;" alt="cross" id="cross">
+        </button>
+        <nav class="nav-links" id="primary-navigation">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skill</a>
+            <a href="#projects">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hello, I'm<br>Bharat Rana</h1>
+            <h2>And I'm a Web <span class="designer">Designer</span></h2>
+            <p>Welcome to my web developer portfolio! I'm Bharat Rana, a skilled web designer and web developer with a passion for creating beautiful, responsive, and user-friendly websites. I've worked on a variety of web projects.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon"><img src="./public/images/linkin.png" alt="LinkedIn"></a>
+                <a href="#" class="social-icon"><img src="./public/images/facebook.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="./public/images/tiktok.png" alt="TikTok"></a>
+                <a href="#" class="social-icon"><img src="./public/images/instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Hire Me!</a>
+                <a href="#" class="btn btn-outline">Download CV</a>
+            </div>
         </div>
-        <div class="button">
-          <button>Hire Me!</button>
-          <button style="border: 2.81px solid rgba(0, 182, 246, 1); background-color: transparent;">Download CV</button>
+        <div class="hero-image">
+            <div class="glow"></div>
+            <img src="./public/images/profile.png" alt="Bharat Rana">
         </div>
-      </div>
-      <div class="right-section">
-        <img src="./public/images/profile.png" alt="profile" />
-      </div>
     </section>
-    <section>
-      <p>150+ <br />Happy Customer</p>
-      <p>100+ <br />Projects</p>
-      <p>7.8/10 <br />Rating</p>
+
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3>150+</h3>
+                <p>Happy Customer</p>
+            </div>
+            <div class="stat-item">
+                <h3>100+</h3>
+                <p>Projects</p>
+            </div>
+            <div class="stat-item">
+                <h3>7.8/10</h3>
+                <p>Rating</p>
+            </div>
+        </div>
     </section>
-    <section id="about">
-      <div class="about-left-section">
-        <a href="#"><img src="./public/images/profile.png" alt="" /></a>
-      </div>
-      <div class="about-right-section">
-        <p>About <span>Me</span></p>
-        <p>
-          As a UI/UX designer and web developer, I specialize in creating user
-          interface and experiences for digital products. I have extensive
-          experience working with product managers, developers, and other
-          stakeholders to gather requirements, create wire-frames and
-          prototypes, and conduct user testing to ensure that the final product
-          meets the needs of the users. Throughout my career, I have achieved
-          several milestones, including designing successful digital products
-          that have received positive feedback from users and stakeholders.
-        </p>
-        <button>Learn More</button>
-      </div>
+
+    <section class="about" id="about">
+        <div class="hero-image">
+            <div class="glow"></div>
+            <img src="./public/images/profile.png" alt="Bharat Rana">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>As a UI/UX designer and web developer, I specialize in creating user interface and experiences for digital products. I have extensive experience working with product managers, developers, and other stakeholders to gather requirements, create wire-frames and prototypes, and conduct user testing to ensure that the final product meets the needs of the users. Throughout my career, I have achieved several milestones, including designing successful digital products that have received positive feedback from users and stakeholders.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
     </section>
-    <section id="service">
-      <p><span>My</span> Services</p>
-      <div class="service-card">
-        <div class="services">
-          <img src="./public/images/web-development.png" alt="Design" />
-          <p>Web Design</p>
-          <p>
-            We are dedicated to providing high-quality web design services that
-            are tailored to meet the specific needs of our clients.
-          </p>
-          <button>Learn More..</button>
+
+    <section class="services" id="services">
+        <h2 class="section-title">My <span>Services</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="./public/images/web-development.png" alt="Web Design" class="service-icon">
+                <h3>Web Design</h3>
+                <p>We are dedicated to providing high-quality web design services that are tailored to meet the specific needs of our clients.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="./public/images/coding.png" alt="Web Development" class="service-icon">
+                <h3>Web Development</h3>
+                <p>We use the latest web technologies and development tools to create websites that are fast, secure, and scalable.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="./public/images/creative.png" alt="Creative Design" class="service-icon">
+                <h3>Creative Design</h3>
+                <p>Our approach is collaborative, and we encourage your feedback throughout the design process to ensure that we are meeting your expectations.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
         </div>
-        <div class="services">
-          <img src="./public/images/coding.png" alt="Coding" />
-          <p>Web Development</p>
-          <p>
-            We use the latest web technologies and development tools to create
-            websites that are fast, secure, and scalable.
-          </p>
-          <button>Learn More..</button>
-        </div>
-        <div class="services">
-          <img src="./public/images/creative.png" alt="Collabration" />
-          <p>Creative Design</p>
-          <p>
-            Our approach is collabrative, and we encourage your feedback
-            throughout the design process to ensure that we are meeting your
-            expectations.
-          </p>
-          <button>Learn More..</button>
-        </div>
-      </div>
     </section>
-    <section id="skill">
-      <div class="skill-section">
-        <p>Skill</p>
-        <div class="skill-tree">
-          <div class="skill-line"></div>
-          <div class="skill">
-            <div class="ellipse"></div>
-            <p>Figma</p>
-            <img src="./public/images/figma.png" alt="figma" />
-          </div>
-          <div class="skill">
-            <div class="ellipse"></div>
-            <p>illustrator</p>
-            <img src="./public/images/illustrator.png" alt="illustrator" />
-          </div>
-          <div class="skill">
-            <div class="ellipse"></div>
-            <p>HTML</p>
-            <img src="./public/images/html.png" alt="HTML" />
-          </div>
-          <div class="skill">
-            <div class="ellipse"></div>
-            <p>CSS</p>
-            <img src="./public/images/css.png" alt="CSS" />
-          </div>
-          <div class="skill">
-            <div class="ellipse"></div>
-            <p>JavaScript</p>
-            <img src="./public/images/javascript.png" alt="JavaScript" />
-          </div>
+
+    <section class="skills-education" id="skill">
+        <div class="skills">
+            <h2>Skill</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <div class="skill-icon"></div>
+                    <span>Figma</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"></div>
+                    <span>Illustrator</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"></div>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"></div>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"></div>
+                    <span>JavaScript</span>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="education-section">
-        <p>Education</p>
-        <div class="education-tree">
-          <div class="education-line"></div>
-          <div class="education">
-            <div class="ellipse"></div>
-            <p>+2 Graducated on Management (2022-2024)</p>
-          </div>
-          <div class="education">
-            <div class="ellipse"></div>
-            <p>Bachelor in BSC.IT (2025-2028)</p>
-          </div>
+        <div class="education">
+            <h2>Education</h2>
+            <div class="education-list">
+                <div class="education-item">
+                    <div class="education-dot"></div>
+                    <span>+2 Graduated on Management (2022-2024)</span>
+                </div>
+                <div class="education-item">
+                    <div class="education-dot"></div>
+                    <span>Bachelor in BSc IT (2025-2028)</span>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-    <section id="project">
-      <p>My Projects</p>
-      <div class="project-card">
-        <div class="project">
-          <img src="./public/images/project1.png" alt="project-1" />
-          <div class="overlay">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Doloremque, repellat. Ipsam dignissimos soluta molestiae ullam
-              illo repudiandae eveniet pariatur obcaecati?
-            </p>
-            <button>Read More..</button>
-          </div>
+
+    <section class="projects" id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./public/images/project1.png" alt="Project 1">
+            </div>
+            <div class="project-card">
+                <img src="./public/images/project2.png" alt="Project 2">
+            </div>
+            <div class="project-card">
+                <img src="./public/images/project3.png" alt="Project 3">
+            </div>
+            <div class="project-card">
+                <img src="./public/images/project4.png" alt="Project 4">
+            </div>
         </div>
-        <div class="project">
-          <img src="./public/images/project2.png" alt="project-2" />
-          <div class="overlay">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Doloremque, repellat. Ipsam dignissimos soluta molestiae ullam
-              illo repudiandae eveniet pariatur obcaecati?
-            </p>
-            <button>Read More..</button>
-          </div>
+        <div style="text-align: center;">
+            <a href="#" class="btn btn-primary">See More</a>
         </div>
-        <div class="project">
-          <img src="./public/images/project3.png" alt="project-3" />
-          <div class="overlay">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Doloremque, repellat. Ipsam dignissimos soluta molestiae ullam
-              illo repudiandae eveniet pariatur obcaecati?
-            </p>
-            <button>Read More..</button>
-          </div>
-        </div>
-        <div class="project">
-          <img src="./public/images/project4.png" alt="project-4" />
-          <div class="overlay">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Doloremque, repellat. Ipsam dignissimos soluta molestiae ullam
-              illo repudiandae eveniet pariatur obcaecati?
-            </p>
-            <button>Read More..</button>
-          </div>
-        </div>
-      </div>
-      <button>See More..</button>
     </section>
-    <section id="contact">
-      <p>Contact Me</p>
-      <form action="#">
-        <input type="text" id="fName" placeholder="First Name" />
-        <input type="text" id="lName" placeholder="Last Name" />
-        <input
-          type="text"
-          id="phoneNo"
-          pattern="[0-9]"
-          placeholder="Phone Number"
-        />
-        <input type="email" id="gmail" placeholder="Gmail" />
-        <input type="text" id="message" placeholder="Message Here" />
-        <input type="submit" value="submit" />
-      </form>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form">
+            <div class="form-row">
+                <input type="text" placeholder="First Name" class="form-input">
+                <input type="text" placeholder="Last Name" class="form-input">
+            </div>
+            <div class="form-row">
+                <input type="tel" placeholder="Phone Number" class="form-input">
+                <input type="email" placeholder="Gmail" class="form-input">
+            </div>
+            <textarea placeholder="Message" class="form-input"></textarea>
+            <button type="submit" class="btn btn-primary" style="width: 100%; background: #01172F;">Submit</button>
+        </form>
     </section>
-    <footer>
-      <p>@All copyright reserve to Bharat Rana</p>
-      <a href="#"><img src="./public/images/linkin.png" alt="linkin" /></a>
-      <a href="#"><img src="./public/images/facebook.png" alt="facebook" /></a>
-      <a href="#"><img src="./public/images/tiktok.png" alt="tiktok" /></a>
-      <a href="#"
-        ><img src="./public/images/instagram.png" alt="instagram"
-      /></a>
+
+    <footer style="text-align: center; padding: 1rem; font-size: 0.9rem; color: #999;">
+        ©All copyright reserve to Bharat Rana
+        <div class="social-links" style="justify-content: center; margin-top: 1rem;">
+            <a href="#" class="social-icon"><img src="./public/images/linkin.png" alt="LinkedIn"></a>
+            <a href="#" class="social-icon"><img src="./public/images/facebook.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="./public/images/tiktok.png" alt="Tik Tok"></a>
+            <a href="#" class="social-icon"><img src="./public/images/instagram.png" alt="Instagram"></a>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
