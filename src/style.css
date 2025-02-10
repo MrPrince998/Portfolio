@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding:0; 
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: var(--color-primary-900);
+  font-family: "Inter", serif;
+}
+/* utility css */
+:root{
+  --color-primary-100: #ffffff;
+  --color-primary-300: #00B6F6;
+  --color-primary-500: #0679FC;
+  --color-primary-700: #0068df;
+  --color-primary-900: #002650; 
+
+  --fs-12:0.75rem;
+  --fs-16:1rem;
+  --fs-18:1.125rem;
+  --fs-20:1.25rem;
+  --fs-24:1.5rem;
+  --fs-32:2rem;
+  --fs-36:2.25rem;
+  --fs-40: 2.5rem;
+  --fs-46: 2.875rem;
+  --fs-48:3rem;
+  --fs-56:3.5rem;
+  --fs-68:4.25rem;
+
+  --fw-400: 400;
+  --fw-500:500;
+  --fw-600:600;
+  --fw-700:700;
+}
+
+
+/* primary css */
+
+header{
+  height: 98px;
+  width: 100%;
+  background-color: var(--color-primary-900);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header p{
+  color: var(--color-primary-100);
+  font-size: var(--fs-40);
+  font-weight: var(--fw-600);
+  padding-left:6rem;
+
+}
+header p span{
+  color: var(--color-primary-500);
+}
+
+.nav-toggle{
+  width: 46rem;
+}
+.menu, .activeMenu{
+  display: none;
+  height: 42px;
+  width: 42px;
+}
+header .nav-toggle .socialMedia{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-right: 3rem;
+  margin-left: 4rem;
+  font-size: var(--fs-24);
+  font-weight: var(--fw-600);
+}
+.socialMedia li a{
+  color:var(--color-primary-100);
+  position: relative;
+  text-decoration: none;
+  padding-bottom:5px;
+}
+/* create underline effect */
+.socialMedia li a::after{
+  content: "";
+  position: absolute;
+  left:50%;
+  bottom:0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition:width 0.5s ease-in-out, left 0.3s ease-in-out;
+}
+/* works when page is active */
+.socialMedia li a.active{
+  color:var(--color-primary-300);
+  border-bottom: 2px solid none;
+  padding-bottom: 5px;
+}
+/* underline appear when active */
+.socialMedia li a.active::after{
+  width: 100%;
+  left:0;
+}
+
+.home{
+  padding-top:98px;
+  padding-left: 6rem;
+  padding-right:6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .left-section{
+  width: 39.6875rem;
+}
+.home p{
+  font-weight: var(--fw-600);
+  font-size: var(--fs-32);
+  color:var(--color-primary-100);
+  line-height: var(--fs-40);
+}
+.home p span.name{
+  font-size: var(--fs-56);
+}
+.home p span.role{
+  color:var(--color-primary-300);
+}
+.home p.intro{
+  font-weight: var(--fw-400);
+  font-size: var(--fs-18);
+  line-height: 22px;
+}
+.home .left-section .socialMedia{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 162px;
+  height: 30px;
+}
+.home .left-section .button{
+  display: flex;
+  justify-content: space-between;
+}
+.home .left-section .button button{
+  width: 180px;
+  height: 56px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 1rem;
+  background-color: var(--color-primary-500);
+  color: var(--color-primary-100);
+  font-size: var(--fs-24);
+  font-weight: var(--fw-600);
+  cursor: pointer;
+}
+.home .left-section .button button:hover{
+  background-color: var(--color-primary-700);
+}
+.home .right-section{
+  width: 510px;
+  height: 520px;
+}
+.home .right-section img{
+  width: 100%;
+  min-width: 360px;
+}
+
+/* css property for mobile web */
+@media (max-width:50em){
+  header{
+    height: 50px;
+  }
+  header p{
+    padding-left:1rem;
+    font-size: var(--fs-32);
+  }
+  .activeMenu{
+    display: block;
+    right:5.5rem;
+  }
+  header .nav-toggle .socialMedia{
+    display: none;
+  }
+  .nav-toggle{
+    width: 42px;
+    padding-right:1rem;
+  }
+
+}
