@@ -57,3 +57,10 @@ document.addEventListener("click", (event) => {
 });
 
 
+var typed = new Typed(".profession",{
+  strings: ["Web Developer", "Web Designer"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay:1000,
+  loop: true
+})

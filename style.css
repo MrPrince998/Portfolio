@@ -108,7 +108,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.designer {
+.profession {
   color: #007FFF;
 }
 
@@ -177,7 +177,7 @@ body {
 }
 
 .hero-image img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   position: relative;
   z-index: 1;
