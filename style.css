@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #01172F;
+  background-color: #003366;
   color: white;
   line-height: 1.6;
 }
@@ -16,7 +16,7 @@ body {
   position: fixed;
   max-width: 768px;
   width: 100%;
-  background-color: #01172F;
+  background-color: #003366;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,9 +28,16 @@ body {
 .logo {
   font-size: 2rem;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  width: 17rem;
+  column-gap: 16px;
 }
 
-.logo span {
+.logo img {
+  font-size: 0;
+  height: auto;
+  width: 16%;
   color: #007FFF;
 }
 
@@ -213,6 +220,16 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.stats .stats-container .line{
+  height: 5rem;
+  width: 2px;
+  background-color: white;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
 /* About Section */
 .about {
   padding: 0 2rem;
@@ -289,6 +306,7 @@ body {
   background: transparent;
   border: 1px solid white;
   padding: 0.5rem 1.5rem;
+  color: white;
 }
 
 /* Skills & Education Section */
@@ -586,7 +604,6 @@ html {
   position: fixed;
   width: 100%;
   max-width: 100vw;
-  background-color: #01172F;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -600,7 +617,7 @@ html {
 
   .nav-links {
       display: flex;
-      gap: 2rem;
+      gap: 1rem;
   }
 
   .hero {
@@ -617,6 +634,7 @@ html {
 
   .hero h1 {
       font-size: 3.5rem;
+      line-height: 62px;
   }
 
   .hero h2 {
